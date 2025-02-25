@@ -48,47 +48,69 @@ const Contact = () => {
         {success && <p className="text-green-500 mb-4">✅ Wiadomość wysłana!</p>}
         {error && <p className="text-red-500 mb-4">❌ Błąd wysyłania wiadomości.</p>}
 
-        <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 rounded-lg shadow-md bg-[var(--color-gray-dark-2)]">
-          <div className="mb-4">
-            <input
-              type="text"
-              name="name"
-              placeholder="Twoje imię"
-              value={formData.name}
-              onChange={handleChange}
-              required
-              className="w-full p-2 border border-[var(--color-gray-light)] rounded-md bg-[var(--color-gray-dark-2)] text-[var(--color-gray-light)]"
-            />
+        <div className="flex flex-col md:flex-row justify-center items-center md:space-x-12 lg:space-x-24 xl:space-x-32">
+          <div className="mt-8 md:mt-0 text-left text-[var(--color-gray-light)] max-w-md lg:max-w-lg">
+            <h3 className="text-2xl font-semibold mb-4">Dane kontaktowe</h3>
+            <p className="flex items-center mb-2">
+              <FaEnvelope className="mr-2" /> rembiaszkarol@icloud.com
+            </p>
+            <p className="flex items-center mb-2">
+              <FaPhone className="mr-2" /> +48 799 260 802
+            </p>
+            <p className="flex items-center">
+              <FaMapMarkerAlt className="mr-2" /> Nowy Sącz, Polska
+            </p>
           </div>
-          <div className="mb-4">
-            <input
-              type="email"
-              name="email"
-              placeholder="Twój email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              className="w-full p-2 border border-[var(--color-gray-light)] rounded-md bg-[var(--color-gray-dark-2)] text-[var(--color-gray-light)]"
-            />
+          <div className="flex items-center mx-4 md:mx-0 my-8 md:my-0">
+            <hr className="w-16 border-t-1 border-[var(--color-gray-light)]" />
+            <span className="text-[var(--color-gray-light)] mx-2">LUB</span>
+            <hr className="w-16 border-t-1 border-[var(--color-gray-light)]" />
           </div>
-          <div className="mb-4">
-            <textarea
-              name="message"
-              placeholder="Twoja wiadomość"
-              value={formData.message}
-              onChange={handleChange}
-              required
-              className="w-full p-2 border border-[var(--color-gray-light)] rounded-md bg-[var(--color-gray-dark-2)] text-[var(--color-gray-light)] h-32"
-            />
-          </div>
-          <button
-            type="submit"
-            disabled={loading}
-            className="bg-[var(--color-accent)] text-white px-6 py-2 rounded-lg shadow-lg hover:bg-[var(--color-accent-dark)] transition duration-300"
-          >
-            {loading ? "Wysyłanie..." : "Wyślij wiadomość"}
-          </button>
-        </form>
+          <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-6 rounded-lg shadow-md bg-[var(--color-gray-dark-2)] w-full lg:max-w-xl">
+            <div className="mb-4">
+              <input
+                type="text"
+                name="name"
+                placeholder="Twoje imię"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                className="w-full p-2 border border-[var(--color-gray-light)] rounded-md bg-[var(--color-gray-dark-2)] text-[var(--color-gray-light)]"
+              />
+            </div>
+            <div className="mb-4">
+              <input
+                type="email"
+                name="email"
+                placeholder="Twój email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="w-full p-2 border border-[var(--color-gray-light)] rounded-md bg-[var(--color-gray-dark-2)] text-[var(--color-gray-light)]"
+              />
+            </div>
+            <div className="mb-4">
+              <textarea
+                name="message"
+                placeholder="Twoja wiadomość"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                className="w-full p-2 border border-[var(--color-gray-light)] rounded-md bg-[var(--color-gray-dark-2)] text-[var(--color-gray-light)] h-32"
+              />
+            </div>
+            <div className="flex justify-center">
+              <button
+                type="submit"
+                disabled={loading}
+                className="bg-[var(--color-accent)] text-white px-6 py-2 rounded-lg shadow-lg hover:bg-[var(--color-accent-dark)] transition duration-300 flex items-center"
+              >
+                <FaPaperPlane className="mr-2" />
+                {loading ? "Wysyłanie..." : "Wyślij wiadomość"}
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
   );
