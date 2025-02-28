@@ -12,14 +12,8 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
 
-a:hover {
-  text-decoration: underline;
-}
+
 
 @keyframes fadeIn {
   0% { opacity: 0; transform: translateY(30px); }
@@ -32,6 +26,7 @@ a:hover {
 
 /* Global color settings */
 :root {
+  --color-background: #0a0e17;
   --color-gray-dark: #707070;
   --color-gray-light: #959595;
   --color-gray-dark-2: #ffffff0a;

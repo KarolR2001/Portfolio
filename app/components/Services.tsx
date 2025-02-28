@@ -17,7 +17,7 @@ const Services = () => {
       <p className="text-[var(--color-gray-light)] mb-12 max-w-2xl mx-auto">
         Oferuję szeroki zakres usług programistycznych dostosowanych do Twoich potrzeb.
       </p>
-      <div id="card" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 justify-items-center lg:px-74 xl:px-32">
+      <div id="card" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-8 justify-items-center px-10 sm:px-1 lg:px-74 xl:px-32">
         {services.map((service, index) => (
           <div
             key={index}

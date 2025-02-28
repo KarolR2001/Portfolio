@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useRef } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
   {
@@ -66,14 +66,14 @@ const Projects = () => {
 
         {/* Strzałki przewijania */}
         <button
-          className="hidden sm:flex absolute top-1/2 left-4 transform -translate-y-1/2 bg-[var(--color-accent)] text-white p-4 rounded-full shadow-lg hover:text-black transition duration-300"
+          className="hidden sm:flex absolute top-1/2 left-4 transform -translate-y-1/2 bg-[var(--color-accent)] text-white p-4 rounded-full shadow-lg hover:text-black transition duration-300 z-10"
           onClick={scrollLeft}
         >
           <FaArrowLeft size={20} />
         </button>
 
         <button
-          className="hidden sm:flex absolute top-1/2 right-4 transform -translate-y-1/2 bg-[var(--color-accent)] text-white p-4 rounded-full shadow-lg hover:text-black transition duration-300"
+          className="hidden sm:flex absolute top-1/2 right-4 transform -translate-y-1/2 bg-[var(--color-accent)] text-white p-4 rounded-full shadow-lg hover:text-black transition duration-300 z-10"
           onClick={scrollRight}
         >
           <FaArrowRight size={20} />
@@ -91,16 +91,19 @@ const Projects = () => {
               href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block bg-[var(--color-gray-dark-2)] p-6 rounded-lg shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl min-w-[400px] sm:min-w-[450px] lg:min-w-[500px] snap-center"
+              className="group relative block bg-[var(--color-gray-dark-2)] p-6 rounded-lg shadow-lg transform transition-all duration-300  hover:shadow-xl min-w-[310px] sm:min-w-[300px] md:min-w-[400px] lg:min-w-[450px] xl:min-w-[500px] snap-center"
             >
               <div className="relative w-full h-72 mb-4 rounded-lg overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  layout="fill"
-                  objectFit="cover"
-                  className="group-hover:opacity-75 transition-opacity duration-300"
-                />
+              <Image
+                src={project.image}
+                alt={project.title}
+                layout="fill"
+                objectFit="cover"
+                className="group-hover:opacity-75 transition-opacity duration-300"
+              />
+              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <FaExternalLinkAlt size={40} className="text-[var(--color-accent)]" />
+              </div>
               </div>
               <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
               <p className="text-[var(--color-gray-light)]">{project.description}</p>

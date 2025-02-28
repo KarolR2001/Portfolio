@@ -4,6 +4,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+     screens: {
+      sm: "640px",
+      md: "734px", // 👈 Zmieniamy md na 1024px
+      lg: "1280px", // 👈 Przesuwamy lg wyżej
+      xl: "1536px",
+      "2xl": "1920px",
+     },
     extend: {
       colors: {
         primary: "#121212",
