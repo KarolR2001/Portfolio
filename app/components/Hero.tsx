@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { FaLinkedin, FaGithub, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 
 const Hero = () => {
   const [text, setText] = useState("");
