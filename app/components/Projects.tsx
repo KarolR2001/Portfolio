@@ -15,31 +15,31 @@ const projects = [
     title: "Music Band Website",
     description: "Strona internetowa dla zespołu muzycznego.",
     image: "/music-band.png",
-    link: "https://music-band.com",
+    link: "https://karolr2001.github.io/WebsiteMusicBand_SMART/",
   },
   {
     title: "Portfolio Website",
     description: "Moje własne portfolio z użyciem Next.js.",
     image: "/portfolio.png",
-    link: "https://portfolio.com",
+    link: "https://karol-rembiasz-portfolio.vercel.app/",
   },
   {
     title: "Strona internetowa BrainTMS",
     description: "Strona internetowa dla firmy transportowej BrainTMS",
     image: "/brainTMS.png",
-    link: "https://portfolio.com",
+    link: "https://github.com/KarolR2001/WebSiteBrainTMS",
   },
   {
     title: "CRM System",
     description: "Aplikacja do zarządzania fakturami, umowami przy użyciu React Node.js i Prisma.",
     image: "/crmSystem.jpg",
-    link: "https://portfolio.com",
+    link: "https://github.com/MateuszRumin/CRM_system_04-08_24",
   },
   {
     title: "Aplikacja .NET C# Bakery System",
     description: "Aplikacja desktop do zarządzania piekarnią przy użyciu .NET i C#.",
     image: "/bakerySystem.png",
-    link: "https://portfolio.com",
+    link: "https://github.com/pawelskraba01/Bakery_Manage_System",
   },
 ];
 
