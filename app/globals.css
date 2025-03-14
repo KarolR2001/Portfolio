@@ -24,11 +24,12 @@ body {
   animation: fadeIn 1s ease-out forwards;
 }
 
+
 /* Global color settings */
 :root {
   --color-background: #0a0e17;
   --color-gray-dark: #707070;
   --color-gray-light: #959595;
-  --color-gray-dark-2: #ffffff0a;
+  --color-gray-dark-2: #141720;
   --color-accent: #FD6F00;
 }

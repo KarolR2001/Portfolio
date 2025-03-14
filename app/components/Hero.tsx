@@ -79,9 +79,15 @@ const Hero = () => {
           <Image
             src="/profilowe.png"
             alt="Karol Rembiasz"
+            priority
             width={700}
+            quality={100}
             height={700}
-            className="rounded-full object-cover"
+            className="rounded-full object-cover shadow-inner"
+  style={{
+    WebkitMaskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%)",
+    maskImage: "linear-gradient(to bottom, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 93%)"
+  }}
           />
         </div>
       </div>

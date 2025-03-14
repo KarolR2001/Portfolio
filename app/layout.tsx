@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import  Particles  from "./components/ParticlesBackground"; // Import komponentu cząsteczek
 import "./globals.css";
 
 const geistSans = Geist({
@@ -23,13 +24,16 @@ export const metadata: Metadata = {
     siteName: "Karol Rembiasz Portfolio",
     images: [
       {
-        url: "/miniatura.png", 
+        url: "https://karol-rembiasz-portfolio.vercel.app/miniatura.png",
         width: 1200,
         height: 630,
         alt: "Miniatura portfolio Karola Rembiasza",
       },
     ],
     type: "website",
+  },
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
@@ -38,8 +42,13 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="pl">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta property="og:image" content="https://karol-rembiasz-portfolio.vercel.app/miniatura.png" />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}>
+        <Particles /> {/* Tło cząsteczkowe */}
+        <main className="relative z-10">{children}</main>
       </body>
     </html>
   );
