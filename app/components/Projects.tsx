@@ -30,6 +30,12 @@ const projects = [
     link: "https://github.com/KarolR2001/WebSiteBrainTMS",
   },
   {
+    title: "Gra w React.js Memory Game",
+    description: "Gra w React.js + Vite + Zustand + SCSS polegająca na odnajdywaniu par kart.",
+    image: "/memory-game.png",
+    link: "https://memory-game-sigma-bice.vercel.app/",
+  },
+  {
     title: "CRM System",
     description: "Aplikacja do zarządzania fakturami, umowami przy użyciu React Node.js i Prisma.",
     image: "/crmSystem.jpg",
