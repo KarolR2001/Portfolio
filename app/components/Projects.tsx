@@ -36,6 +36,12 @@ const projects = [
     link: "https://memory-game-sigma-bice.vercel.app/",
   },
   {
+    title: "HMI Security App",
+    description: "Bezpieczna aplikacja Flask z uwierzytelnianiem wieloskładnikowym (MFA), zarządzaniem sesjami i zabezpieczeniami HTTPS.",
+    image: "/hmi-security.png",
+    link: "https://github.com/KarolR2001/HMI-Security-App",
+  },
+  {
     title: "CRM System",
     description: "Aplikacja do zarządzania fakturami, umowami przy użyciu React Node.js i Prisma.",
     image: "/crmSystem.jpg",
