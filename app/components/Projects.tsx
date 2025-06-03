@@ -27,7 +27,7 @@ const projects = [
     title: "Strona internetowa BrainTMS",
     description: "Strona internetowa dla firmy transportowej BrainTMS",
     image: "/brainTMS.png",
-    link: "https://github.com/KarolR2001/WebSiteBrainTMS",
+    link: "https://brain-tms-website.vercel.app/",
   },
   {
     title: "Gra w React.js Memory Game",
