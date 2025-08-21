@@ -45,7 +45,7 @@ const Hero = () => {
           {name}
         </h2>
         <p className="text-5xl md:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-[var(--color-accent)] to-[var(--color-gray-light)] bg-clip-text text-transparent">
-          WEB & .NET developer
+          WEB & Python Developer
         </p>
         <div className="flex justify-center lg:justify-start space-x-4 md:space-x-6 my-6">
           <a href="www.linkedin.com/in/karol-rembiasz-14515830b" target="_blank" rel="noopener noreferrer" className="text-[var(--color-gray-light)] hover:text-[var(--color-accent)]">

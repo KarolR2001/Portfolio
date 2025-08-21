@@ -24,18 +24,29 @@ const About = () => {
 
         {/* Tekst o mnie */}
         <div className="text-justify max-w-lg md:max-w-2xl lg:max-w-lg">
-        <p className="text-lg text-[var(--color-gray-dark)] leading-relaxed">
-          Jestem pasjonatem programowania z solidnym wykształceniem w dziedzinie informatyki. Ukończyłem studia inżynierskie na kierunku Informatyka Stosowana w Akademii Nauk Stosowanych w Nowym Sączu, a obecnie kontynuuję tam studia magisterskie, specjalizując się w Programowaniu Systemów Informatycznych.
-        </p>
-        <p className="mt-4 text-lg text-[var(--color-gray-dark)] leading-relaxed">
-          Specjalizuję się w tworzeniu aplikacji webowych i desktopowych, a także w zarządzaniu bazami danych. Posiadam doświadczenie w pracy z technologiami takimi jak React, TypeScript, Node.js, .NET, C#, SQL. Tworzę nowoczesne, responsywne interfejsy użytkownika, dbając o intuicyjność i wydajność aplikacji.
-        </p>
-        <p className="mt-4 text-lg text-[var(--color-gray-dark)] leading-relaxed">
-          Poza programowaniem interesuję się optymalizacją kodu i najlepszymi praktykami w zakresie wydajności aplikacji i bezpieczeństwa danych. Nieustannie rozwijam swoje umiejętności, eksplorując nowe technologie i rozwiązania.
-        </p>
-        <p className="mt-4 text-lg text-[var(--color-gray-dark)] leading-relaxed">
-          Jeśli szukasz zaangażowanego i kreatywnego developera, który z pasją podchodzi do tworzenia nowoczesnych rozwiązań IT – zapraszam do współpracy!
-        </p>
+          <p className="text-lg text-[var(--color-gray-dark)] leading-relaxed">
+            Jestem pasjonatem programowania z solidnym wykształceniem w dziedzinie informatyki. 
+            Ukończyłem studia inżynierskie na kierunku Informatyka Stosowana w Akademii Nauk Stosowanych w Nowym Sączu, 
+            a obecnie kontynuuję tam studia magisterskie, specjalizując się w Programowaniu Systemów Informatycznych.
+          </p>
+          <p className="mt-4 text-lg text-[var(--color-gray-dark)] leading-relaxed">
+            Specjalizuję się w tworzeniu aplikacji webowych i desktopowych, a także w zarządzaniu bazami danych. 
+            Posiadam doświadczenie w pracy z technologiami takimi jak React, TypeScript, Node.js, .NET, C#, SQL, Python. 
+            Tworzę nowoczesne, responsywne interfejsy użytkownika, dbając o intuicyjność i wydajność aplikacji. 
+            W Pythonie rozwijam również aplikacje związane ze sztuczną inteligencją, wykorzystując biblioteki i narzędzia 
+            wspierające uczenie maszynowe oraz analizę danych.
+          </p>
+          <p className="mt-4 text-lg text-[var(--color-gray-dark)] leading-relaxed">
+            Poza programowaniem interesuję się sztuczną inteligencją – pogłębiam wiedzę o jej zastosowaniach, 
+            architekturach modeli i praktykach wdrażania rozwiązań AI. Dodatkowo fascynuje mnie optymalizacja kodu 
+            oraz najlepsze praktyki w zakresie wydajności aplikacji i bezpieczeństwa danych. 
+            Nieustannie rozwijam swoje umiejętności, eksplorując nowe technologie i rozwiązania.
+          </p>
+          <p className="mt-4 text-lg text-[var(--color-gray-dark)] leading-relaxed">
+            Jeśli szukasz zaangażowanego i kreatywnego developera, który z pasją podchodzi do tworzenia nowoczesnych 
+            rozwiązań IT – zapraszam do współpracy!
+          </p>
+
 
 
           {/* Przycisk pobrania CV */}
